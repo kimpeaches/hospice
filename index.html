@@ -79,7 +79,7 @@
 
                         <button
                             class="nav-close-btn"
-                            aria-label="clsoe menu"
+                            aria-label="close menu"
                             data-nav-toggler
                         >
                             <ion-icon
@@ -91,17 +91,19 @@
 
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a href="#" class="navbar-link title-md">Home</a>
+                            <a href="#home" class="navbar-link title-md"
+                                >Home</a
+                            >
                         </li>
 
                         <li class="navbar-item">
-                            <a href="#" class="navbar-link title-md"
+                            <a href="#service" class="navbar-link title-md"
                                 >Services</a
                             >
                         </li>
 
                         <li class="navbar-item">
-                            <a href="#" class="navbar-link title-md">Blog</a>
+                            <a href="#" class="navbar-link title-md">Reviews</a>
                         </li>
                     </ul>
 
@@ -162,6 +164,7 @@
                     class="section hero"
                     style="background-image: url('./assets/images/hero-bg.png')"
                     aria-label="home"
+                    id="home"
                 >
                     <div class="container">
                         <div class="hero-content">
@@ -211,7 +214,7 @@
         - #SERVICE
       -->
 
-                <section class="service" aria-label="service">
+                <section class="service" aria-label="service" id="service">
                     <div class="container">
                         <ul class="service-list">
                             <li>
@@ -313,7 +316,15 @@
                                     </h3>
 
                                     <p class="card-text">
-                                        Our Social Worker continu
+                                        Our team of trained professionals can
+                                        provide individual or family support,
+                                        helping you navigate difficult
+                                        conversations, cope with grief and
+                                        anxiety, and find peace during this
+                                        tender time. We're here to walk
+                                        alongside you on this journey, offering
+                                        a listening ear and guidance every step
+                                        of the way.
                                     </p>
                                 </div>
                             </li>
@@ -368,7 +379,7 @@
                             </p>
 
                             <div class="wrapper">
-                                <ul class="about-list">
+                                <!-- <ul class="about-list">
                                     <li class="about-item" data-reveal="left">
                                         <ion-icon
                                             name="checkmark-circle-outline"
@@ -407,7 +418,7 @@
                                             >Aolore magna aliqua</span
                                         >
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
 
@@ -617,7 +628,7 @@
                                                 name="person-outline"
                                             ></ion-icon>
 
-                                            <span class="span">Sarah G.</span>
+                                            <span class="span">Sarah M.</span>
                                         </div>
 
                                         <div class="card-meta">
@@ -745,6 +756,54 @@
             </article>
         </main>
 
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="container">
+                <h1>FormSubmit Demo</h1>
+                <form
+                    target="_blank"
+                    action="https://formsubmit.co/kimreyes_5@yahoo.com"
+                    method="POST"
+                >
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Full Name"
+                                    required
+                                />
+                            </div>
+                            <div class="col">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Email Address"
+                                    required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                            placeholder="Your Message"
+                            class="form-control"
+                            name="message"
+                            rows="10"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">
+                        Submit Form
+                    </button>
+                </form>
+            </div>
+        </section>
         <!--
     - #FOOTER
   -->
