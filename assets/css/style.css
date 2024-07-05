@@ -1263,3 +1263,15 @@ body.nav-active {
         margin-block-start: 0;
     }
 }
+
+.form-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Increase the size of the textarea */
+.large-textarea {
+    width: 80%; /* You can adjust this percentage to fit your design needs */
+    height: 150px; /* Adjust the height as needed */
+    resize: none; /* Prevents users from manually resizing the textarea */
+}
